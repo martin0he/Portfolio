@@ -7,8 +7,8 @@
 
 
 :root{
-    --color-primary: #191d2b;
-    --color-secondary: #27AE60;
+    --color-primary: #2515b8;
+    --color-secondary: #7379ec;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey-0: #f8f8f8;
@@ -63,31 +63,31 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #191d2b;
+    
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #b2becd;
+    
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #bddc25;
+    
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #4c0833;
+    
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #14ac1c;
+   
 }
 
 .active{
