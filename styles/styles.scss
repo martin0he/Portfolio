@@ -9,7 +9,7 @@
 :root{
     --color-primary: #1e1e1e;
     --color-secondary: #55a1df;
-    --color-tertiary: #48e36e;
+    --color-tertiary: #6a9955;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey-0: #f8f8f8;
@@ -155,9 +155,8 @@ section{
             transition: all .3s ease-in-out;
             width: 85%;
             height: 100%;
-            //background-color: var(--color-secondary);
             background: rgb(85,161,223);
-            background: linear-gradient(90deg, rgba(85,161,223,1) 0%, rgba(72,227,110,0.9483192935377276) 100%); 
+            background: linear-gradient(90deg, rgba(85,161,223,1) 0%, rgba(106,153,85,1) 100%); 
             position: absolute;
             left: 0;
             top: 0;
@@ -198,6 +197,10 @@ section{
         p{
             margin: 2.5rem 0;
             line-height: 2rem;
+        }
+        h2{
+            font-weight: 400;
+            color: var(--color-tertiary);
         }
     }
 }
