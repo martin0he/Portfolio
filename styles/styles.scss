@@ -414,15 +414,15 @@ section{
 .portfolios{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     margin-top: 3rem;
     .portfolio-item{
         position: relative;
         border-radius: 15px;
         img{
-            width: 100%;
+            width: 100%;//MAKE SURE ALL PROJECT POSTERS ARE 400X300 PX!!!!
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             border-radius: 15px;
         }
         .hover-items{
