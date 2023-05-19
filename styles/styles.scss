@@ -511,9 +511,9 @@ section{
             }
         }
         img{
-            width: 250px;
-            height: 150px;
-            object-fit: cover;
+            width: 267px;//maintain same aspect ratio as original image to prevent cropping
+            height: 191px;
+            object-fit: contain;
             border-top-left-radius: 6px;
             border-top-right-radius: 6px;
             filter: grayscale(100%);
@@ -609,7 +609,7 @@ section{
                     align-items: center;
                     justify-content: center;
                     font-size: 1.2rem;
-                    
+
                 }
             }
                 

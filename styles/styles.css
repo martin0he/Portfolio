@@ -487,10 +487,10 @@ section {
   box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.8);
 }
 .blogs-container .blog img {
-  width: 250px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 267px;
+  height: 191px;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   filter: grayscale(100%);
