@@ -9,7 +9,7 @@
 :root{
     --color-primary: #1e1e1e;
     --color-secondary: #55a1df;
-    --color-tertiary: rgb(106, 153, 85);
+    --color-tertiary: #6a9955;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey-0: #f8f8f8;
@@ -22,13 +22,14 @@
     --color-inputBox: #2a2e35;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.5);
+    --box-shadow-blog: 2px 4px 20px rgba(var(--color-tertiary), 0.6);
 
 }
 
 .light-mode{
-    --color-primary: #ffffff;
+    --color-primary: #e4dcdc;
     --color-secondary: #ea4d4d;
-    --color-tertiary: #6a9955;
+    --color-tertiary: rgb(211, 112, 211);
     --color-white: #42474b;
     --color-black: #000;
     --color-grey-0: #f8f8f8;
@@ -41,6 +42,8 @@
     --color-inputBox: #c8cbcf;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.5);
+    --box-shadow-blog: 2px 4px 20px rgba(var(--color-tertiary), 0.6);
+
 }
 
 body{
@@ -411,6 +414,7 @@ section{
             left: -27px;
             top: 0;
             background-color: var(--color-tertiary);
+            color: var(--color-primary);
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -435,7 +439,7 @@ section{
         }
         .tl-duration{
             padding: .2rem .6rem;
-            background-color: var(--color-grey-5);
+            background-color: var(--color-grey-4);
             border-radius: 15px;
             display: inline-block;
             font-size: .8rem;
@@ -542,10 +546,10 @@ section{
         position: relative;
         background-color: var(--color-primary);
         border-radius: 5px;
-        box-shadow: 1px 1px 20px rgba(0,0,0,.1);
+        box-shadow: 1px 1px 20px rgba(0,0,0,.6);
         transition: all .4s ease-in-out;
         &:hover{
-            box-shadow: 1px 1px 20px rgba(var(--color-tertiary), 0.3);
+            box-shadow: 1px 5px 20px var(--color-tertiary);
             transform: translateY(-5px);
             transition: all .4s ease-in-out;
             img{
