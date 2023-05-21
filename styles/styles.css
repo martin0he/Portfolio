@@ -677,14 +677,41 @@ section {
   color: var(--color-white);
   resize: none;
 }
-.contact-content-con .right-contact .submit-btn {
-  display: flex;
-  justify-content: flex-start;
-}
 
 .btn-con {
   display: flex;
   align-self: flex-start;
+}
+
+.submit-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-size: 1.2rem;
+  width: auto;
+  height: auto;
+  position: relative;
+  border: 2px solid var(--color-secondary);
+  display: flex;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 1rem 2rem;
+}
+.submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transition: width 0.2s linear;
+  z-index: -1;
+}
+.submit-btn:hover::before {
+  width: 100%;
 }
 
 .main-btn {

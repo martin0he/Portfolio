@@ -712,11 +712,7 @@ section{
             }
         }
 
-        .submit-btn{
-            display: flex;
-            justify-content: flex-start;
-            
-        }
+        
 
     }
 }
@@ -727,10 +723,51 @@ section{
     align-self: flex-start;
 }
 
+.submit-btn{
+    border-radius: 30px;
+    color: inherit;
+    font-size: 1.2rem;
+    width: auto;
+    height: auto;
+    position: relative;
+    border: 2px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--color-secondary);
+        transition: width 0.2s linear;
+        z-index: -1;
+    }
+
+    &:hover{
+        &::before{
+            width: 100%;
+
+        }
+    }
+}
+
+
 .main-btn{
     border-radius: 30px;
     color: inherit;
     font-weight: 600;
+    //font-size: 1.5rem;
+    //width: auto;
+    //height: auto;
     position: relative;
     border: 1px solid var(--color-secondary);
     display: flex;
@@ -739,9 +776,9 @@ section{
     align-items: center;
     overflow: hidden;
     background-color: transparent;
+    //padding: 0 2rem;
     .btn-text{
         padding: 0 2rem;
-
     }
 
     .btn-icon{
@@ -763,7 +800,7 @@ section{
         transition: width 0.2s linear;
         z-index: -1;
     }
-    
+
     &:hover{
         &::before{
             width: 100%;
