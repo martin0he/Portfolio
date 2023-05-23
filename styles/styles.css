@@ -574,7 +574,7 @@ section {
   padding-top: 3.5rem;
 }
 .contact-content-con .left-contact {
-  flex: 2;
+  flex: 5;
 }
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
@@ -639,7 +639,7 @@ section {
   font-size: 1.2rem;
 }
 .contact-content-con .right-contact {
-  flex: 3;
+  flex: 4;
   margin-left: 3rem;
 }
 .contact-content-con .right-contact .input-control {
