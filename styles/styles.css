@@ -63,7 +63,6 @@ a {
 header {
   min-height: 100vh;
   color: var(--color-white);
-  overflow: scroll;
 }
 
 section {
@@ -108,7 +107,7 @@ section {
 
 .active {
   display: block;
-  animation: scaleAnim 1s ease-in-out;
+  animation: scaleAnim 0.8s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -159,23 +158,23 @@ section {
 .theme-btn {
   top: 5%;
   right: 3%;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: var(--color-grey-4);
-  cursor: pointer;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
 }
 .theme-btn:active {
   transform: translateY(-7px);
 }
 .theme-btn i {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--color-grey-2);
   pointer-events: none;
 }
@@ -201,17 +200,22 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  border-radius: 0% 13% 13% 0%;
+}
+.header-content .left-header .h-shape .outline-box {
+  background-color: var(--color-imgBack);
+  width: 65%;
+  height: 70%;
+  border-radius: 13%;
+  margin-top: 20%;
+  margin-left: 5%;
 }
 .header-content .left-header .image {
   width: 60%;
   height: 70%;
   margin-left: 4rem;
-  background-color: var(--color-imgBack);
-  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  border-radius: 25px;
+  background-color: var(--color-primary);
+  border-radius: 13%;
   transition: all 0.3s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -219,13 +223,14 @@ section {
   height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 20%;
-  margin-left: 12%;
+  margin-top: 31%;
+  margin-left: 5%;
   transition: all 0.3s ease-in-out;
   filter: grayscale(100%);
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
+  transform: translateY(6px);
 }
 .header-content .right-header {
   display: flex;
@@ -800,6 +805,9 @@ section {
   .portfolios {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
+  }
+  .portfolios .portfolio-item .hover-items h3 {
+    font-size: 1rem;
   }
   .blogs-container {
     grid-template-columns: 1fr;
