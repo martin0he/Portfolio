@@ -224,6 +224,7 @@ section{
                 border-radius: 13%;
                 margin-top: 20%;
                 margin-left: 5%;
+                
             }
         }
         
@@ -238,16 +239,18 @@ section{
                     width: 70%;
                     height: 70%;
                     object-fit: cover;
-                    margin-top: 31%;
+                    margin-top: 34%;
                     margin-left: 5%;
                     transition: all .3s ease-in-out;
-                    
                     filter: grayscale(100%);
                     &:hover{
                         filter: grayscale(0);
-                        
                         transform: translateY(6px);
                     }
+            }
+            center{
+                padding-top: 25px;
+                opacity: 50%;
             }
         }
     }

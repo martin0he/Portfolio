@@ -223,7 +223,7 @@ section {
   height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 31%;
+  margin-top: 34%;
   margin-left: 5%;
   transition: all 0.3s ease-in-out;
   filter: grayscale(100%);
@@ -231,6 +231,10 @@ section {
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
   transform: translateY(6px);
+}
+.header-content .left-header .image center {
+  padding-top: 25px;
+  opacity: 50%;
 }
 .header-content .right-header {
   display: flex;
